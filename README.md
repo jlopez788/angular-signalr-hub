@@ -55,12 +55,10 @@ angular.module('app',['SignalR'])
 			'lockEmployee': function (id) {
 				var employee = find(id);
 				employee.Locked = true;
-				$rootScope.$apply();
 			},
 			'unlockEmployee': function (id) {
 				var employee = find(id);
 				employee.Locked = false;
-				$rootScope.$apply();
 			}
 		},
 		
